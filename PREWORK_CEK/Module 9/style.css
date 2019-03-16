@@ -1,0 +1,66 @@
+<style>
+
+                body {
+                    background-color: white;
+                }
+            
+                h1 {
+                    color: orange;
+                    text-decoration: bold;
+                }
+
+                h2 {
+                    color: black;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+
+                h3, p {
+                    color: black;
+                    font-family: cursive;
+                }
+
+                h4 {
+                    color: black;
+                    text-decoration: underline;
+                    text-align: center;
+                }
+            
+                h5, {
+                    font-size: 100px;
+                    font-family: cursive;
+                    align-content: center;
+                }
+
+                h6 {
+                    color: black;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+
+                .center, {
+                    font-size: 100px;
+                    font-family: cursive;
+                    align-content: center;
+                }
+
+                .small {
+                    font-size: 10px;
+                    align-content: center;
+                }
+            
+                .almond {
+                    color: white;
+                }
+            
+                .butterfinger {
+                    color: red;
+                }
+            
+                .ferrero {
+                    color: blue;
+                }
+            
+                .all {
+                    color: green;
+                }
+            
+            </style>
