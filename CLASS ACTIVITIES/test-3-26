@@ -1,0 +1,43 @@
+function add (x,y){
+      return  x+y;
+    }
+    
+    var add = function add (x,y){
+       return  x+y;
+    }
+    
+    var add = function (x,y){
+      return  x+y;
+    }
+    
+    var add = (x,y) => x+y;
+    
+    var add = (x,y) => {
+      return x+y;
+    }
+    
+    add(1,2)
+    
+    var playerChoice = 'r';
+    var computerChoice = 'p';
+    
+    
+    var answers = {
+      r: {
+        r: 'tie',
+        p: 'lose',
+        s: 'win'
+      },
+      p: {
+        r: 'win',
+        p: 'tie',
+        s: 'lose'
+      },
+      s: {
+        r: 'lose',
+        p: 'win',
+        s: 'tie'
+      }
+    };
+    
+    answers['r']['r']

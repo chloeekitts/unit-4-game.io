@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+        <!--Required meta tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!--CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+        <!-- linking google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+        <title>March Madness Trivia</title>
+    </head>
+
+    <body>
+     	<header id="main-header">
+			<h1>MARCH MADNESS TRIVIA</h1>
+			
+            <span>NCAA TOURNAMENT TEAM HISTORY</span>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2"></div> <!--padding-->
+                <section class="col-12 col-lg-8" id="section-block">
+                    <header>
+                        <h2>Test Your University Knowledge</h2>
+                    </header>
+                    <p id="instructions">Enter any key to start!</p>
+                    <div class="mobileInput">
+                        <input type="text" id="textInput" value="">
+                    </div>
+                    <p id="message"></p>
+                    <p id="userAnswer">_ _ _ _ _ _ _</p>
+                    <p id="userGuess">You Guessed: </p>
+                </section>
+            </div>
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <aside class="col-6 col-lg-4" id="aside-block">
+                    <header>
+                        <h3>Score Board</h3>
+                    </header>
+                    <p>Win: <span id="win">0</span></p>
+                    <p>Lose: <span id="lose">0</span></p>
+                    <p>Tries Left: <span id="tries">10</span></p>
+                </aside>
+                <div class="col-6 col-lg-4" id="img-container">
+                    <img src="assets/images/march-madness-logo.png" alt="logo" class="img-fluid" id="picture">
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <span>&copy; Copyright 2019 - Chloe Kitts</span>
+        </footer>
+        
+        <!--Javascript-->
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,64 @@
+var words = ['wow'];
+
+var selectedWord = words [0];
+
+var makeUnderscore = function(){
+	return '_';
+};
+
+var makeDiv = fuction(letter){
+	return '<div>' + letter + '</div>';
+}
+
+selectedWord
+	.split('')
+	.map(makeUnderscore);//* turns everything into an underscore//*
+	.join(",")
+
+
+//*NEW CODE NOTES - Separate from above code*//
+
+var words = ['wow'];
+var makeUnderscore = function(el){
+	return '_';
+};
+
+var makeDiv = function(letter){
+	return '<div class="underscore">' + letter + '</div>'
+}
+
+//*KEY WORDS FOR ALTERING ARRAYS arr.splice([1, 2, 3, ]): mehtods to do this project*//
+.splice //* actually change original array, spit the new thing out that has been changed or separated *//
+.slice //* does not change the original array, just gives you a part of the array *//
+.concat //* literally adds to the array, but returns a new array *//
+.split //* splits the array, breaks up the actual elements - like "wow" would be "w-o-w"*//
+.join  //* opposite of split *//
+.map  //* like a loop 
+.filter  //*used 
+
+//*********LOOK UP THESE TERMS AGAIN and details on arrays************//
+
+
+
+
+
+var selectedWord = words[0];
+var copy = selectedWord.split('');
+
+var listOfUnderScores = selectedWord
+	.split('')
+	.map(mapMakeUnderscore)
+
+var letterPressed = 'w';
+
+var index = copy.indexOf(letterPressed)
+
+while (index > -1) {
+		copy.splice(index, 1, null);
+	index = copy.indedOf(letterPressed);
+	
+}
+
+$('').html(listOfUnderScores);
+
+
