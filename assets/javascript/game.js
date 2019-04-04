@@ -30,15 +30,15 @@ function reset() {
 
 
 	// reset health points.
-	characters.ObiWan.healthPoints = 120;
-	characters.LukeSky.healthPoints = 100;
-	characters.DarSid.healthPoints = 150;
+	characters.ObiWan.healthPoints = 100;
+	characters.LukeSky.healthPoints = 120;
+	characters.DarSid.healthPoints = 160;
 	characters.DarMaul.healthPoints = 180;
 
 	// reset attack power.
-	characters.ObiWan.attackPower = 8;
+	characters.ObiWan.attackPower = 9;
 	characters.LukeSky.attackPower = 10;
-	characters.DarSid.attackPower = 10;
+	characters.DarSid.attackPower = 11;
 	characters.DarMaul.attackPower = 12;
 
 	// delete all in-game text.
@@ -68,8 +68,8 @@ function reset() {
 	$(".darthmhp").html(characters.DarMaul.healthPoints);
 
 	// reset border colors. 
-	$(".firstRow").css({"background-color": "white", "outline-color": "limegreen", 
-	"border-width": "3px", "outline-style": "solid", "border-color": "white", "outline-width": "3px"});
+	$(".firstRow").css({"background-color": "white", "outline-color": "yellow", 
+	"border-width": "2px", "outline-style": "solid", "border-color": "white", "outline-width": "3px"});
 
 };
 
@@ -79,16 +79,16 @@ var characters = {
 	ObiWan: {
 			name: "ObiWan",
 			visual: 'assets/images/ObiWan.jpg',
-			healthPoints: 120,
-			attackPower: 8,
+			healthPoints: 100,
+			attackPower: 9,
 			fullName: "Obi-Wan Kenobi",
-			counterAttackPower: 24
+			counterAttackPower: 25
 			},
 
 	LukeSky:{
 			name: "LukeSky",
 			visual: 'assets/images/LukeSkywalker.jpg',
-			healthPoints: 100,
+			healthPoints: 120,
 			attackPower: 10,
 			fullName: "Luke Skywalker",
 			counterAttackPower: 5
@@ -97,8 +97,8 @@ var characters = {
 	DarSid:{ 
 			name: "DarSid",
 			visual: 'assets/images/DarthSidious.png',
-			healthPoints: 150,
-			attackPower: 10,
+			healthPoints: 160,
+			attackPower: 11,
 			fullName: "Darth Sideous",
 			counterAttackPower: 20
 			},
@@ -176,7 +176,7 @@ var characters = {
 	      
     });
 
-    // When the player clicks on any of the characters in the "enemies available to attack" section, the game 
+    // Click on any of the characters in the "enemies available to attack" section, the game 
      // determines which one was clicked and moves the one clicked into the "Defender" position. The other two 
      // characters remain in "enemies available to attack" section.     
      $(".move").click(function(){
